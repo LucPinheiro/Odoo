@@ -1,1 +1,1 @@
-# odoo
+# Visual envrironment Odoo
