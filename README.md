@@ -1,1 +1,1 @@
-# odoo
+# Structure Addon Odoo
