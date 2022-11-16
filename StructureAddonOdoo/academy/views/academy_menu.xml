@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <menuitem
+        id="academy_menu"
+        name="Academy"
+        action="academy_action"
+        web_icon="academy,static/description/icon.png"
+        sequence="3"
+    />
+
+    <menuitem
+        id="academy_menu_course"
+        name="Course"
+        parent="academy_menu"
+        action="course_action"
+        sequence="1"
+    /> 
+
+
+    <menuitem
+        id="academy_menu_subjects"
+        name="Subjects"
+        parent="academy_menu"
+        action="subject_action"
+        sequence="2"
+    />
+
+    <menuitem
+        id="academy_menu_student"
+        name="Student"
+        parent="academy_menu"
+        action="student_action"
+        sequence="2"
+    />
+
+    <menuitem
+        id="academy_menu_teacher"
+        name="Teacher"
+        parent="academy_menu"
+        action="teacher_action"
+        sequence="2"
+    />
+
+    <menuitem
+        id="academy_sale_menu_sale"
+        name="Sale"
+        parent="academy_menu"
+        action="academy_action"
+        sequence="2"
+    /> 
+    
+<!--  -->
+            <menuitem
+                id="academy_sale_item_ordens"
+                name="Ordens"
+                parent="academy_sale_menu_sale"
+                action="academy_action"
+                sequence="1"
+            /> 
+            
+                    <menuitem
+                        id="academy_sale_subitem_quotation"
+                        name="Quotation"
+                        parent="academy_sale_item_ordens"
+                        action="academy_sale_quotation_action"
+                        sequence="1"
+                    /> 
+
+                    
+                    <menuitem
+                        id="academy_sale_subitem_customer"
+                        name="Customer"
+                        parent="academy_sale_item_ordens"
+                        action="student_action"
+                        sequence="2"
+                    /> 
+                    
+            <menuitem
+                id="academy_sale_item_invoice"
+                name="Invoice"
+                parent="academy_sale_item_ordens"
+                action="academy_action"
+                sequence="2"
+            /> 
+
+                    <menuitem
+                        id="academy_sale_subitem_invoice"
+                        name="Ordens to invoice"
+                        parent="academy_sale_item_invoice"
+                        action="academy_action"
+                        sequence="1"
+                    /> 
+
+
+            <menuitem
+                id="academy_sale_item_product"
+                name="Products"
+                parent="academy_sale_menu_sale"
+                action="course_action"
+                sequence="2"
+            /> 
+
+                
+                <menuitem
+                    id="academy_sale_product_subitem_course"
+                    name="Course"
+                    parent="academy_sale_item_product"
+                    action="course_action"
+                    sequence="2"
+                /> 
+
+                                
+                <menuitem
+                    id="academy_sale_product_subitem_book"
+                    name="Books"
+                    parent="academy_sale_item_product"
+                    action="course_action"
+                    sequence="2"
+                /> 
+
+
+            <menuitem
+                id="academy_sale_item_reports"
+                name="Reports"
+                parent="academy_sale_menu_sale"
+                action="course_action"
+                sequence="2"
+            /> 
+
+                <menuitem
+                    id="academy_sale_report_subitem_sales"
+                    name="Sales"
+                    parent="academy_sale_item_reports"
+                    action="course_action"
+                    sequence="2"
+                /> 
+
+<!--  -->
+    <menuitem
+        id="academy_menu_purchase"
+        name="Purchase"
+        parent="academy_menu"
+        action="academy_purchase_action"
+        sequence="2"
+    />
+         <menuitem
+                id="academy_purchase_item_product"
+                name="Products"
+                parent="academy_menu_purchase"
+                action="course_action"
+                sequence="2"
+            /> 
+
+                
+                <menuitem
+                    id="academy_purchase_product_subitem_course"
+                    name="Course"
+                    parent="academy_purchase_item_product"
+                    action="course_action"
+                    sequence="2"
+                /> 
+
+                                
+                <menuitem
+                    id="academy_purchase_product_subitem_book"
+                    name="Books"
+                    parent="academy_purchase_item_product"
+                    action="course_action"
+                    sequence="2"
+                /> 
+
+    <menuitem
+        id="academy_menu_configuration"
+        name="Configuration"
+        parent="academy_menu"
+        action="academy_action"
+        sequence="10"
+    />
+
+<!--  -->
+        <menuitem
+            id="configuration_item_settings"
+            name="Settings"
+            parent="academy_menu_configuration"
+            action="academy_action"
+            sequence="101"
+        />
+
+        
+        <menuitem
+            id="configuration_item_administration"
+            name="Administration"
+            parent="academy_menu_configuration"
+            action="academy_action"
+            sequence="101"
+        />
+
+<!--
+        <menuitem
+            id="configuration_menu_product"
+            name="Products"
+            parent="academy_menu_item_configuration"
+            sequence="102"
+        />
+
+<!
+        <menuitem
+            id="configuration_menu_administration"
+            name="Administration"
+            parent="academy_menu_item_configuration"
+            sequence="102"
+        />
+
+        <menuitem
+            id="configuration_menu_unit_measure"
+            name="Unit of measure"
+            parent="academy_menu_item_configuration"
+            sequence="102"
+        />
+
+        <menuitem
+            id="configuration_menu_student"
+            name="Course"
+            parent="academy_menu_item_configuration"
+            sequence="102"
+        />
+
+        <menuitem
+            id="configuration_menu_subjects"
+            name="Subjects"
+            parent="academy_menu_item_configuration"
+            sequence="103"
+        />
+
+        <menuitem
+            id="configuration_menu_student"
+            name="Student"
+            parent="academy_menu_item_configuration"
+            sequence="104"
+        />
+
+        <menuitem
+            id="configuration_menu_teacher"
+            name="Teacher"
+            parent="academy_menu_item_configuration"
+            sequence="105"
+        /> -->
+
+<!--  -->
+</odoo>

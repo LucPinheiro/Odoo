@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<!-- report_academy_academy_sale_report_pdf -->
+
+    <template id="academy_sale_document_template">
+
+        <t t-set="doc" t-value="doc.with_context(lang=doc.product_id.name)" />
+        <div class="header" style="font-size: 20px">
+           <span class="font-weight-bold">Head </span>
+
+         </div>
+
+       <div class="page">
+          
+          
+            <div class="page" style="font-size: 20px">
+              <div class="d-flex flex-wrap justify-content-center">
+                <span class="font-weight-bold">PRESENTATION: </span>
+              </div>
+            </div>
+            
+            <table class="table table-sm o_main_table">
+                <thead style="display: table-row-group">
+                    <tr>
+                      <th name="th_description" class="text-left">Description</th>
+                        <th name="th_quantity" class="text-right">Quantity</th>
+                        <th name="th_priceunit" class="text-right">Unit Price</th>
+                    </tr>
+                </thead>
+
+            </table>
+
+            <div class="footer" style="font-size: 20px">
+            <span class="font-weight-bold">Footer </span>
+            </div>
+      </div>
+
+    </template> 
+
+    <template id="report_academy_academy_sale_report_pdf">
+        <t t-call="web.basic_layout">
+            <t t-foreach="docs" t-as="doc">
+                <t t-call="academy.academy_sale_document_template" t-lang="doc.product_id.lang"/>
+            </t>
+        </t>
+    </template>
+
+</odoo>

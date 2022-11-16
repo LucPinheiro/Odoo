@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <menuitem
+    id="my_addon_menu"
+    name="My Addon"
+    action="my_addon_action"
+    web_icon="icon_my_addon,static/description/icon.png"
+    sequence="2"/>
+
+    <menuitem
+        id="my_addon_menu_item_1"
+        name="Item 1"
+        parent="my_addon_menu"
+        action="my_addon_action_item_1"
+        sequence="1"/>
+
+    <menuitem
+        id="my_addon_menu_item_2"
+        name="Item 2"
+        parent="my_addon_menu"
+        action="my_addon_action_item_2"
+        sequence="1"/>
+    
+    <menuitem
+        id="my_addon_menu_item_3"
+        name="Item 3"
+        parent="my_addon_menu"
+        action="my_addon_action_item_3"
+        sequence="1"/>
+
+    <menuitem
+        id="my_addon_menu_item_4"
+        name="Item 4"
+        parent="my_addon_menu"
+        action="my_addon_action_item_4"
+        sequence="1"/>
+
+</odoo>

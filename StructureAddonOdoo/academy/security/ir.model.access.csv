@@ -1,0 +1,14 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_academy_user,academy.user,model_academy,base.group_user,1,1,1,1
+access_academy,access.academy,model_academy,,1,1,1,1
+access_student,access.student,model_student,,1,1,1,1
+access_student_line,access.student_line,model_student_line,,1,1,1,1
+access_teacher,access.teacher,model_teacher,,1,1,1,1
+access_teacher_line,access.teacher_line,model_teacher_line,,1,1,1,1
+access_course,access.course,model_course,,1,1,1,1
+access_course_line,access.course_line,model_course_line,,1,1,1,1
+access_subject,access.subject,model_subject,,1,1,1,1
+access_academy_sale,access.academy_sale,model_academy_sale,,1,1,1,1
+access_academy_sale_line,access.academy_sale_line,model_academy_sale_line,,1,1,1,1
+access_academy_purchase,access.academy_purchase,model_academy_purchase,,1,1,1,1
+

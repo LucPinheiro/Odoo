@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="academy_purchase_action" model="ir.actions.act_window">
+        <field name="name">Purchase</field>
+        <field name="res_model">academy.purchase</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <record id="academy_purchase_view_tree" model="ir.ui.view">
+        <field name="name">academy.purchase.view.tree</field>
+        <field name="model">academy.purchase</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name" />
+                <field name="code" />
+            </tree>
+        </field>
+    </record>
+    
+</odoo>

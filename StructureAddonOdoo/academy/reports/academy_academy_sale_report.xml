@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <report 
+        id="action_report_academy_academy_sale_report_pdf"
+        model="academy.sale"
+        string="Academy sale Order Tags"
+        name="academy.report_academy_academy_sale_report_pdf"
+        file="academy.report_academy_academy_sale_report_pdf"
+        report_type="qweb-pdf"
+        attachment_use="False"
+    />
+</odoo>
