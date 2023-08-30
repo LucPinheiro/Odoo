@@ -1,1 +1,1 @@
-# Structure Addon Odoo
+# Structure Addon Academy Odoo
